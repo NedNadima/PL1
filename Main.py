@@ -6,7 +6,7 @@ def test():
     numberlist = []
     for count in range (1,101):
         numberlist.append(count)
-    return str (numberlist).strip("[]")
+    return  ','.join(str (n) for n in numberlist)
         
 
 if __name__ == "__main__":
